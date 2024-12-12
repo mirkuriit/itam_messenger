@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Мини-чат: Вход и Регистрация</title>
+    <link rel="stylesheet" href="/static/styles/auth.css">
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <div className="img">
+            <img src="/static/Group 18.png" alt="Group 18" />
+        </div>
+        <div class="content">
+            <form id="loginForm" class="form active">
+                <div class="modal">
+                    <h2>Вход в аккаунт</h2>
+                    <div class="input1">
+                        <label for="email">Адрес электронной почты</label>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input1">
+                        <label for="password">Пароль</label>
+                    <input type="password" placeholder="Пароль" required>
+                    </div>
+                    <button id="loginButton" type="submit">Войти</button>
+                    <p>Нет аккаунта?<a class="tab" data-tab="register">Зарегистрироваться</a></p>
+                </div>
+            </form>
+            <form id="registerForm" class="form">
+                <div class="modal">
+                    <h2>Регистрация</h2>
+                    <div class="input1">
+                        <label for="email">Адрес электронной почты</label>
+                    <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input1">
+                        <label for="text">Имя пользователя</label>
+                        <input type="text" placeholder="Имя" required>
+                    </div>
+                    <div class="input1">
+                        <label for="password">Пароль</label>
+                        <input type="password" placeholder="Пароль" required>
+                    </div>
+                    <div class="input1">
+                        <label for="password">Повторите пароль</label>
+                        <input type="password" placeholder="Повторите пароль" required>
+                    </div>
+                    <button id="registerButton" type="submit">Зарегистрироваться</button>
+                    <p>Уже есть аккаунт?<a class="tab active" data-tab="login">Войти</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/js/auth.js"></script>
+</body>
+
+</html>
